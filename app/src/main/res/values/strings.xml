@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Timer Assignment</string>
+    <string name="Milk_button">Milk</string>
+    <string name="Water_motor_button">Water Motor</string>
+    <string name="Toast_button">Toast</string>
+</resources>
