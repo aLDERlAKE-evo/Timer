@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_PARAMETER")
+
 package com.example.timerapp
 
 import android.content.Intent
@@ -11,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+@Suppress("MemberVisibilityCanBePrivate")
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             putExtra(AlarmClock.EXTRA_SKIP_UI, true)
         }
         startActivity(intent)
-        Toast.makeText(this,"timer initiated, check notification bar to track status.", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"timer initiated, check notification bar to track status.",
+                       Toast.LENGTH_SHORT).show()
     }
 }
